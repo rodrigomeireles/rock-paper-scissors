@@ -32,8 +32,8 @@ function encodeChoice(choice) {
 function playerWon(playerChoice, computerSelection) {
   player = encodeChoice(playerChoice)
   computer = encodeChoice(computerSelection)
-  if (player == computer) {
-    return `You both drawed with ${playerChoice}. Ewww!`
+  if (playerChoice == computerSelection) {
+    return `You drawed with ${playerChoice}. Ewww!`
   } else if (player.beats(computer)) {
     return `You won! Good job! ${playerChoice} beats ${computerSelection}!`
   } else {
