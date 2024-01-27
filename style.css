@@ -24,4 +24,7 @@ body {
 	height: auto;
 }
 
+#enemy img {
+  transform: rotateY(180deg)
+}
 
